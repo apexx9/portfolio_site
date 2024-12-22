@@ -1,8 +1,13 @@
+'use client'
 import React from 'react';
+{/*Components import */}
+import Hero from '@/components/hero';
 
-const Page = ({}) => {
+const Page = () => {
   return (
-    <div>Page</div>
+    <div className='page w-full h-full'>
+      <Hero />
+    </div>
   )
 }
 
