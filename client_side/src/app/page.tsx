@@ -6,7 +6,7 @@ import Hero from '@/components/hero';
 const Page = () => {
   return (
     <div className='page w-full h-full'>
-      <Hero />
+      <Hero className='w-full h-1/2'/>
     </div>
   )
 }

@@ -20,13 +20,13 @@ import EXPERIENCE_IMAGE from "../../public/assets/Images/creating-on-experience.
 
 
 
-const Hero = () => {
+const Hero = ({className} : {className? : string}) => {
 
 
     return(
-        <div className="hero w-full bg-transparent content-wrapper max-h-[600px] absolute overflow-hidden">
+        <div className={`hero relative bg-transparent content-wrapper overflow-hidden ${className}`}>
             <div className="hero__content flex flex-col items-center justify-center h-full relative">
-                <h1 className="hero__content--name text-[199px] absolute align-top top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 z-[1]" style={{ color: COLORS[3] }}>
+                <h1 className="hero__content--name text-[199px] absolute top-1/3 w-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]" style={{ color: COLORS[3] }}>
                     AARON
                 </h1>
                 <div className="hero__content--headImage relative z-[2] overflow-hidden drop-shadow-2xl">
@@ -34,7 +34,7 @@ const Hero = () => {
                     src={HEAD_IMAGE}
                     alt={"The Image of the Head"}
                     width={600}
-                    height={600}
+                    height={455}
                     className="w-auto  mt-[-100px] "
                     // onClick={handleImageClick}
                     />
