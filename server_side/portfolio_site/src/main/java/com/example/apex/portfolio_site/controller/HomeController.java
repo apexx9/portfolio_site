@@ -18,5 +18,4 @@ public class HomeController {
     public String getMethodName(@RequestParam String param) {
         return new String(name + " " + param);
     }
-
 }
